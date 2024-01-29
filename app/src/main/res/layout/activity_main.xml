@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="@color/Background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/danepracownikow" />
+
+    <EditText
+        android:id="@+id/imie"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="@string/imie"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/nazwisko"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="@string/nazwisko"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stanowisko" />
+
+        <Space
+            android:layout_width="19dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/wybor"
+            android:layout_width="281dp"
+            android:layout_height="match_parent"
+            android:entries="@array/stanowiska"
+            android:background="@color/Background"
+            android:popupBackground="@color/button"
+            />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tekstgenerowaniehasla"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ileznakow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ileznakow"
+        android:inputType="text" />
+
+    <CheckBox
+        android:id="@+id/litery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/wielkoscliter" />
+
+    <CheckBox
+        android:id="@+id/cyfry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cyfry" />
+
+    <CheckBox
+        android:id="@+id/specialne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/znakispecjalne" />
+
+    <Button
+        android:id="@+id/gen"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/generuj" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button"
+        android:text="@string/zatwierdz" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BazaDanych</string>
+    <string name="danepracownikow">Dane Pracownika</string>
+    <string name="imie">Imię</string>
+    <string name="nazwisko">Nazwisko</string>
+    <string name="stanowisko">Stanowisko</string>
+    <string-array name="stanowiska">
+        <item>Kierownik</item>
+        <item>Starszy programista</item>
+        <item>Młodszy programista</item>
+        <item>Tester</item>
+    </string-array>
+    <string name="tekstgenerowaniehasla">Generowanie hasła</string>
+    <string name="ileznakow">Ile znaków?</string>
+    <string name="wielkoscliter">Małe i wielkie litery</string>
+    <string name="cyfry">Cyfry</string>
+    <string name="znakispecjalne">Znaki specjalne</string>
+    <string name="generuj">Generuj hasło</string>
+    <string name="zatwierdz">Zatwierdź</string>
+</resources>
